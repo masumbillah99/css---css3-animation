@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Visibility</title>
+    <style>
+        :root {
+            --color: white;
+        }
+        body {
+            background-color: gray;
+        }
+
+        .box {
+            width: calc(100% - 800px);
+            height: 150px;
+            border: 2px solid #cc69cc;
+        }
+
+        #box-2 {
+            color: #f5881b;
+            /* display: none; */
+            visibility: hidden;
+        }
+        h2 {
+            color: var(--color);
+        }
+        p {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">
+        <h3>Box - 1</h3>
+    </div>
+    <div class="box" id="box-2">
+        <h3>Box - 2</h3>
+    </div>
+    <div class="box" id="box-3">
+        <h3>Box - 3</h3>
+    </div>
+
+    <!-- css custom property -->
+    <div>
+        <h2>This is a header</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis molestiae illum voluptatum nisi dicta
+            nemo aliquid, consequuntur tempora velit est!</p>
+    </div>
+    <div>
+        <h1>This is a big heading</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, exercitationem beatae voluptates libero
+            qui explicabo!</p>
+    </div>
+    <button>Button</button>
+</body>
+
+</html>

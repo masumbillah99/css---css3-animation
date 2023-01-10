@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT PSEUDO</title>
+    <style>
+        body {
+            background-color: grey;
+            color: white;
+        }
+        h1 {
+            color: royalblue;
+        }
+
+        h1:hover {
+            color: skyblue;
+        }
+
+        h5 {
+            background-color: green;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            display: none;
+        }
+
+        div:hover h5 {
+            display: block;
+        }
+
+        a {
+            margin-right: 20px;
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: #AA7BF9;
+        }
+        a:active {
+            color: green;
+        }
+        input:focus {
+            border: 3px solid #2031B4;
+            background-color: green;
+            color: white;
+            padding: 10px;
+        }
+        li::marker {
+            color: red;
+            font-size: 20px;
+        }
+        p:nth-child(odd) {
+            background-color: #AA7BF9;
+        }
+        p:nth-child(even){
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo Element</h1>
+    <div>
+        Hover over me to show the p element.
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, quas!</h5>
+    </div><br>
+    <a href="https://web.programming-hero.com">programming-hero</a>
+    <a href="https://facebook.com">Facebook</a>
+    <a href="https://youtube.com">Youtube</a><br><br>
+    <input type="text">
+    <ul>
+        <li>Apple</li>
+        <li>Bat</li>
+        <li>Cat</li>
+    </ul>
+    <ol>
+        <li>Dog</li>
+        <li>Egg</li>
+        <li>Fish</li>
+    </ol>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+</body>
+
+</html>

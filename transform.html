@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .container, .inner {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #d3d619;
+            text-align: center;
+        }
+        .container {
+            background-color: lightblue;
+            margin-left: 150px;
+            margin-bottom: 10px;
+        }
+        .inner {
+            background-color: lightsalmon;
+            transform: scale(0.7);
+            transform: skew(25deg);
+            transform: translate(30px, -50px);
+            transform: rotate(30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transform I am coming</h1>
+    <div class="box container">
+        <div class="inner">box-1</div>
+    </div>
+    <div class="box container">
+        <div class="inner">box-2</div>
+    </div>
+    <div class="box container">
+        <div class="inner">box-3</div>
+    </div>
+</body>
+
+</html>

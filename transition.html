@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid seagreen;
+            background-color: salmon;
+            margin-bottom: 10px;
+        }
+
+        .box:hover {
+            width: 400px;
+        }
+        .box1:hover {
+            height: 300px;
+        }
+        .box3:hover {
+            width: 200px;
+            transform: rotate(180deg);
+        }
+
+        .box1 {
+            transition: width 3s ease, height 5s;
+        }
+
+        .box2 {
+            transition: width 3s ease-in;
+        }
+        .box3 {
+            transition: width 2s ease-out, height 2s, transform 2s;
+            transition-delay: 2s;
+        }
+        .box4{
+            transition: width 3s ease-in-out
+        }
+        .box5 {
+            transition-timing-function: linear;
+            transition-delay: 1s;
+            transition-duration: 2s;
+            transition-property: width;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        <h2>CSS Transition</h2>
+    </div>
+    <div class="box box2">
+        <h2>CSS Transition</h2>
+    </div>
+    <div class="box box3">
+        <h2>CSS Transition</h2>
+    </div>
+    <div class="box box4">
+        <h2>CSS Transition</h2>
+    </div>
+    <div class="box box5">
+        <h2>CSS Transition</h2>
+    </div>
+</body>
+
+</html>
